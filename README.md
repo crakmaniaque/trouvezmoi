@@ -17,3 +17,5 @@ Also as of 0.10.0, Trouvez-moi saves game statistics and achievements on disk us
 
 ## Known bugs
 Starting from 0.10.0, when a `Console.CancelKeyPress` event is fired, Trouvez-moi attempts to get back to previous state if it's possible. To achieve that, it requires to input a line break each time CTRL+C is fired (it's easier for coding menus). This sometimes causes unexpected behaviour but doesn't crash the executable. I'll fix this soon.
+
+Also, the game is not concepted to work in a PowerShell environment. For an unknown reason they're many random crashes at some points of the game when the executable is launched from PowerShell. Use cmd.exe instead.
